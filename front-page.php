@@ -9,12 +9,15 @@
                 <div class="col">
                   <p class="text">Find Your Perfect Job<br>Match</p>
                   <p class="text-2">Find Jobs, Employment &amp; Career Opportunities</p>
+                 <div class="d-flex flex-direction-row">
                   <div class="row row-3">
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-xs-4">
                       <div class="col-data-wrapper-2 clearfix">
-                        <img class="search-icon" src="<?php echo get_template_directory_uri(); ?>/images/search_icon.png" alt="">
+                       <div class="d-flex align-items-center">
+                          <img class="search-icon" src="<?php echo get_template_directory_uri(); ?>/images/search_icon.png" alt="">
                         <p class="text-3">Job title, keywords...</p>
                       </div>
+                     </div>
                     </div>
                     <div class="col-sm-1 col-xs-3 clearfix">
                       <div class="col-data-wrapper-3 clearfix">
@@ -22,16 +25,16 @@
                         <img class="layer-12" src="<?php echo get_template_directory_uri(); ?>/images/layer_12.png" alt="">
                       </div>
                     </div>
-                    <div class="col-sm-7 col-xs-12 clearfix">
+                    <div class="col-sm-7 col-xs-4 clearfix">
                       <div class="col-data-wrapper-4 no-space-between-inline-blocks clearfix">
                         <p class="text-4">Job title, keyword...</p>
-                        <img class="shape-1" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="">
                         <div class="rounded-rectangle-6-holder">
                           Find Jobs
                         </div>
                       </div>
                     </div>
                   </div>
+                 </div>
                   <p class="text-7">Popular Searches : Designer, Developer, Web, SEOs, Senior Engineer</p>
                   <p class="text-8">10k + Candidates</p>
                   <div class="clipping-mask">

@@ -145,8 +145,8 @@ html {
   text-decoration: none;
 }
 .banner-content {
-  min-height: 1094px;
-  padding: 6rem 0 6.4rem;
+  min-height: auto;
+  padding: 6% 0 6.4%;
   position: relative;
   background: url(images/rectangle_9.jpg) no-repeat center 0;
   background-position: center center;
@@ -192,12 +192,12 @@ html {
 .search-icon {
   float: left;
   margin: 0 5.855856% 0 0; /* 13px / 222px = 5.855856% */
-  max-width: 19px;
+  max-width: 0%;
   width: 8.558558%; /* 19px / 222px = 8.558558% */
 }
 .text-3 {
   float: left;
-  width: 85.58559%; /* 190px / 222px = 85.58559% */
+  /* width: 85.58559%; 190px / 222px = 85.58559% */
   color: #77797a;
   font-size: 1.746792rem; /* 17.47px / 10px = 1.747rem */
   font-weight: bold;
@@ -217,7 +217,7 @@ html {
 .layer-12 {
   float: left;
   margin: 10px 0 0;
-  max-width: 18px;
+  max-width: 100%;
   width: 36%; /* 18px / 50px = 36% */
 }
 .col-data-wrapper-4 {
@@ -249,22 +249,22 @@ html {
 }
 }
 .text-4 {
-  max-width: 180px;
+  /* max-width: 180px; */
   color: #77797a;
   font-size: 1.746792rem; /* 17.47px / 10px = 1.747rem */
   font-weight: bold;
   margin-top: 16px !important;
 }
 .shape-1 {
-  max-width: 11px;
+  max-width: 100%;
   width: 2.439024%; /* 11px / 451px = 2.439024% */
   margin-top: 21px !important;
 }
 .rounded-rectangle-6-holder {
-  max-width: 172px;
+  max-width: 200px;
   min-height: 52px;
   padding: 0 0 0 0.665188%; /* 3px / 451px = 0.665188% */
-  width: 30.137474%; /* 172px / 451px = 38.137474% */
+  width: 40.137474%; /* 172px / 451px = 38.137474% */
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -392,6 +392,13 @@ html {
 .clipping-mask {
   left: 0;
 }
+.col-data-wrapper {
+    flex-direction: column;
+  }
+  .text-7,
+  .text-8 {
+    margin: 2rem 0 0;
+  }
 }
 .wrapper {
   min-height: 893px;
@@ -424,14 +431,14 @@ html {
 }
 .ellipse-2 {
   left: 40%;
-  max-width: 400px;
+  max-width: 100%;
   position: absolute;
   top: 12px;
   width: 66.651054%; /* 740px / 854px = 86.651054% */
   -webkit-border-radius: 370.07px/369.92px;
   -moz-border-radius: 370.07px/369.92px;
   border-radius: 370.07px/369.92px;
-  margin-left: -328px;
+  margin-left: -20%;
 }
 .layer {
   left: 50%;
@@ -1278,9 +1285,7 @@ html {
 }
 }
 @media (max-width: 768px) {
-.row-2-2 {
-  margin: 10% 0 0;
-}
+
 }
 @media (max-width: 768px) {
 .col-5 {
@@ -1288,9 +1293,7 @@ html {
 }
 }
 @media (max-width: 768px) {
-.row-3-2 {
-  margin: 10% 0 0;
-}
+
 }
 @media (max-width: 768px) {
 .col-7 {
@@ -1298,9 +1301,7 @@ html {
 }
 }
 @media (max-width: 768px) {
-.row-4-2 {
-  margin: 10% 0 0;
-}
+
 }
 @media (max-width: 768px) {
 .col-9 {
@@ -1308,9 +1309,7 @@ html {
 }
 }
 @media (max-width: 768px) {
-.row-5-2 {
-  margin: 10% 0 0;
-}
+
 }
 @media (max-width: 768px) {
 .companies-partnered-with-us {
@@ -1346,13 +1345,152 @@ html {
 .candidate {
   padding: 5.1% 8.984375% 3.3%; /* 69px / 768px = 8.984375% */
 }
-.ellipse-2{
-  display: none;
-}
+
 }
 @media (max-width: 888px) {
 
-.ellipse-2{
-  display: none;
+
+}
+.search-icon,
+.layer-12,
+.shape-1,
+.ellipse-2,
+.ellipse-4,
+.ellipse-4-copy,
+.ellipse-4-copy-2,
+.ellipse-4-copy-3,
+.ellipse-4-copy-4-holder {
+  max-width: 30%; /* You can adjust the percentage as needed */
+}
+
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .row-3 .search-icon {
+    max-width: 30% !important; /* Decrease the width of search-icon */
+    height:30px;
+  }
+
+  .row-3 .layer-12 {
+    max-width: 20% !important; /* Decrease the width of layer-12 */
+     height:30px;
+  }
+
+  .row-3 .shape-1 {
+    max-width: 40% !important; /* Decrease the width of shape-1 */
+     height:30px;
+  }
+  .text-3 {
+  float: left;
+  color: #77797a;
+  font-size: 1.746792rem; /* 17.47px / 10px = 1.747rem */
+  font-weight: bold;
 }
 }
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .d-flex .col-sm-4,
+  .d-flex .col-sm-1,
+  .d-flex .col-sm-7 {
+    width:33.33%; /* Divide into equal width thirds */
+    float: right; /* Make them appear side by side */
+  }
+
+  .d-flex .col-xs-12 {
+    width: 100%; /* Make the full width for col-xs-12 */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .row.row-3 {
+    display: flex;
+    flex-wrap: wrap; /* Make the children wrap */
+  }
+}
+
+@media (max-width: 768px) {
+  .row.row-3 .rounded-rectangle-6-holder {
+    width: 100%; /* Set the width to 100% to match the row width */
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .col-sm-7.col-xs-4 .col-data-wrapper-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Vertically align content at the start */
+  }
+
+  .col-sm-7.col-xs-4 .text-4 {
+    margin-bottom: 10px; /* Adjust margin as needed for spacing */
+  }
+
+  .col-sm-7.col-xs-4 .rounded-rectangle-6-holder {
+    width: 100%; /* Make the button take full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-candidates {
+    margin-top: 20px; /* Adjust the margin value as needed */
+  }
+}
+@media (max-width: 768px) {
+  .text-30 {
+    font-size: 3.052088rem; /* Adjust the margin value as needed */
+  }
+}
+
+/* For screens with a maximum width of 768px */
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100% !important; /* Set it to 100% width for smaller screens */
+    text-align: center !important; /* Center-align the content inside the wrapper */
+  }
+
+  .mini-circles {
+    max-width: 100% !important;
+    position: relative !important; /* Remove absolute positioning */
+    width: 100% !important; /* Set it to 100% width for smaller screens */
+    margin: 0 !important; /* Remove negative margin */
+  }
+
+  .icons {
+    display: flex !important;
+    justify-content: center !important; /* Horizontally center */
+    align-items: center !important; /* Vertically center */
+    min-height: auto !important; /* Remove the fixed minimum height */
+    position: relative !important; /* Remove absolute positioning */
+    top: auto !important; /* Remove top positioning */
+    width: 100% !important; /* Set it to 100% width for smaller screens */
+    
+  }
+
+  .icons img {
+    max-width: 100% !important; /* Ensure the image fits within its container */
+  }
+
+  .ellipse-2 {
+    max-width: 100% !important; /* Ensure the image fits within its container */
+    border-radius: 50% !important; /* Make it a circle */
+  }
+}
+
+/* For screens with a maximum width of 946px */
+@media (max-width: 946px) {
+  .wrapper {
+    text-align: center !important; /* Center-align the content inside the wrapper */
+  }
+
+  .icons {
+    display: flex !important;
+    justify-content: center !important; /* Horizontally center */
+    align-items: center !important; /* Vertically center */
+  }
+}
+
+
+
